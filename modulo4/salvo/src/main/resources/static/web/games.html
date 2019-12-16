@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salvo</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <form id="login-form" onsubmit="return false">
+            <label>Name: <input type="text" name="username"></label>
+            <label>Password: <input type="text" name="password"></label>
+            <button type="submit" id="submit" value="Submit">Sign In</button>
+            <button type="submit" id="signUp" value="Signup">Sign Up</button>
+        </form>
+
+        <form class="logOut" id="logout-form-main" onsubmit="return false">
+            <p class="user-logged-in" id="user-logged-in-main"></p>
+            <button id="logout">Log out</button>
+        </form>
+    </div>
+</nav>
+
+<h2>Not Cool <small><em>(but effective)</em></small> Leaderboard</h2>
+<div class='container'><table class='table table-striped table-responsive' id="leaderboard"></table></div>
+
+<ol id="lista"></ol>
+
+<script src="scripts/games.js"></script>
+
+</body>
+</html>
